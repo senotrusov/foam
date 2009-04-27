@@ -1,0 +1,23 @@
+
+.foam_console_tray {
+  background-color: #aaaaff;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: Arial;
+  font-size: 10px;
+  }
+
+.foam_console_tray a{
+  padding: 3px;
+  cursor: pointer;
+  text-decoration: underline;
+  border: 0px;
+  }
+
+.foam_console_tray a:hover{
+  color: white;
+  background-color: black;
+  }

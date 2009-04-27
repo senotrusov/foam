@@ -1,0 +1,324 @@
+/* 
+# Copyright (c) 2005-2007 Stanislav Senotrusov <senotrusov@gmail.com>
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/* ---- Основные объекты ---- */
+
+/* ( Global ) */
+
+html, body {
+  margin:0px;
+  padding:0px;
+  background: #ECE9D8;
+  height: 100%;
+}
+
+* {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+}
+
+td {
+  vertical-align:top;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  padding:2px;
+}
+
+a:hover {
+  background: black;
+  color: white;
+}
+
+/* ( /Global ) */
+
+
+/* ---- Меню сверху ---- */
+
+.top_menu {
+  padding:5px;
+  height: 20px;
+  background:#333333;
+}
+
+.top_menu a {
+  color:#bebebe;
+  margin-left:10px;
+  padding:2px;
+}
+
+.top_menu a:hover {
+  background: white;
+  color: black;
+}
+
+
+/* ---- Редактор ---- */
+
+/* ( global ) */
+
+input, select, textarea {
+  margin-bottom:2px;
+}
+
+/* ( picker ) */
+
+.editor .picker {
+  padding: 4px;
+  }
+
+.editor .picker .picked,
+.editor .picker .edited {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  }
+
+.editor .picker .picked .title,
+.editor .picker .edited .title {
+  font-size: 12px;
+  font-weight: bold;
+  background: orange;
+  padding:3px;
+  padding-left:7px;
+  padding-right:7px;
+  color: white;
+  }
+  
+  
+.editor .picker li{
+  line-height: 16px;
+  }
+
+/* ( browser ) */
+
+.editor .browser {
+  padding: 4px;
+  }
+
+.editor .browser .list {
+  z-index:200;
+  background-color: #999999;
+
+  border: 1px solid #7F9DB9;
+
+  padding-right:3px;
+  padding-left:3px;
+  padding-bottom:10px;
+  padding-top:5px;
+
+  overflow-y:scroll;
+  height:100px;
+
+  display: block;
+  clear: both;
+  }
+
+.editor .browser .show_incoming {
+  float:left;
+  }
+
+.editor .browser .add_to_event {
+  float:left;
+  }
+  
+.editor .browser .hide {
+  }
+
+.editor .browser .show {
+  width:10px;
+  }
+  
+  
+  
+/* ( event ) */
+
+.editor .event {
+  padding: 4px;
+  }
+  
+.editor .event .list {
+  z-index:100;
+  background-color: #999999;
+
+  border: 1px solid #7F9DB9;
+
+  padding-right:3px;
+  padding-left:3px;
+  padding-bottom:10px;
+  padding-top:5px;
+
+  overflow-y:scroll;
+  display: block;
+  }
+
+.editor .event .remove_from_event {
+  }
+
+
+/* ---- edit ---- */
+
+.editor .edit {
+  background: #999999;
+  padding:5px;
+  }
+
+
+/* textarea */
+  
+.editor .edit .textarea_placeholder{
+  padding-right:10px;
+  display:block;
+  }
+
+.editor .edit .textarea textarea {
+  width: 100%;
+  padding:3px;
+  font-size:13px;
+  }
+
+/* date */
+
+.editor .edit .date_placeholder {
+  text-align:center;
+  display: block;
+  }
+
+
+/* keywords list */
+
+.editor .edit .keywords_list {
+  line-height:18px;
+  display: block;
+  }
+  
+.editor .edit .keywords_list a {
+  background-color: #FFFFD1;
+  padding:1px;
+  padding-left:2px;
+  padding-right:2px;
+  }
+
+.editor .edit .keywords_list a:hover {
+  background-color: black;
+  color: white;
+  }
+  
+/* keyword input */
+
+.editor .edit .keyword_input_placeholder{
+  padding-right:4px;
+  display:block;
+  }
+
+.editor .edit .keyword_input input {
+  width: 100%;
+  }
+
+
+
+
+/* keyword autocomplete */
+
+div.autocomplete {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFD1;
+  position: absolute;
+}
+
+div.autocomplete ul {
+  margin: 0pt;
+  padding: 0px;
+  list-style-type: none;
+  border: 1px solid #7F9DB9;
+}
+
+div.autocomplete ul li.selected {
+  cursor: pointer;
+  background-color: #FF7E00;
+}
+
+.editor .edit .keyword_input div.autocomplete .parents {
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:3px;
+
+  color: #770000;
+  font-size:10px;
+  line-height:10px;
+}
+
+.editor .edit .keyword_input div.autocomplete .title {
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom:4px;
+
+  font-size:12px;
+  line-height:12px;
+}
+
+.editor .edit .keyword_input div.autocomplete .title b {
+  font-size:12px;
+}
+
+
+/* Keywords browse */
+
+.editor .edit .browse {
+  background-color: #FFFFD1;
+
+  border: 1px solid #7F9DB9;
+
+  padding-right:3px;
+  padding-left:3px;
+  padding-bottom:10px;
+  padding-top:5px;
+
+  overflow-y:scroll;
+
+  display: block;
+  }
+
+.editor .edit .browse input{
+  margin:3px;
+  padding:0px;
+  }
+
+.editor .edit .browse .item_title{
+  padding-top:1px;
+  }
+
+.editor .edit .browse .item_title a .have_children_mark {
+  color: #770000;
+  }
+  
+.editor .edit .browse .item_title a:hover .have_children_mark {
+  color: white;
+  }

@@ -1,0 +1,170 @@
+
+/* Окружение */
+
+#console .hidden {
+  display: none;
+  }
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: Consolas, Andale Mono, monospace;
+  font-size: 11px;
+  line-height: 16px;
+  }
+  
+
+#console {
+  overflow: auto;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+
+
+/* Маленькие блоки которые встречаются везде */
+
+#console .model_summary {
+  background: orange;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#console .controller_summary {
+  background: #C664FF;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#console .regular_summary {
+  background: #999999;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+  
+#console .attribute {
+  color: blue;
+  font-weight: bold;
+  }
+
+#console .value {
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+/* Тип записи - exception */  
+
+#console .exception {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  background: black;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  }
+
+/* Тип записи - event */  
+/*
+#console .event {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  background: #ffbeff;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  }
+*/
+  
+/* Тип записи - milestone */  
+
+#console .milestone {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  background: #bebebe;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  }
+
+
+
+/* Тип записи - inspection */  
+
+#console .inspection {
+  background-color: #eeeeee;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  }
+
+#console .inspection .conf {
+  margin-left: 30px;
+  margin-top: 5px;
+  padding: 3px;
+  background: #ffffaa;
+  color: #333333;
+  }
+  
+#console .inspection .area_one {
+  margin-left: 30px;
+  padding: 3px;
+  background: #aaffaa;
+}
+
+#console .inspection .area_two {
+  margin-left: 30px;
+  padding: 3px;
+  background: #aaaaff;
+}
+
+#console .inspection .show_detail {
+  cursor: pointer;
+  color: red;
+  }
+
+#console .inspection .show_detail:hover {
+  background: white;
+  }
+  
+#console .inspection .show_detail .show_detail_button {
+  background: white;
+  color: black;
+  font-size: 10px;
+  padding-top: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+
+
+
+/* Поле ввода снизу */
+
+#input {
+  width: 100%;
+  background: #FFF5A5;
+  border-top: 1px solid #9A8F32;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  }
+
+#input div {
+  margin-right: 10px;
+  margin-left: 10px;
+  }
+
+#input #command {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 4px;
+  font-family: Consolas, Andale Mono, monospace;
+  font-size: 14px;
+  }
