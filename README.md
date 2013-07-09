@@ -8,11 +8,11 @@ Anyway it's here for archaeological purposes.
 ### The idea behind that implementation
 
 * Controller holds data models and update view.
-* Model object can relate to another model objects by holding it in a collections or attributes.
+* Model object can relate to another model objects by holding it in collections or in attributes.
 * Controller object can relate to another controller objects in a similar way.
 * Models are singletons.
 * One model object may be used in a number of controllers.
-* If model is updated, the controller receives event and update view accordingly.
+* If model is updated, the controller receives event and updates view accordingly.
 * The events are propagates through related models and through all related controllers.
 * Controllers may be selective at events they receive.
 
