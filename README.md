@@ -1,6 +1,11 @@
 ### Implementation of Model-View-Controller in JavaScript, in browser
 
-I don't think it have any practical value these days, in the precence of many MVC JavaScript libraries, but that's my project from 2005 and the presence of it makes me an early adopter of some sort. Anyway it's here for archaeological purposes.
+I don't think it have any practical value these days, in the precence of many MVC JavaScript libraries,
+but that's my project from 2005 and the presence of it makes me an early adopter of some sort.
+
+Anyway it's here for archaeological purposes.
+
+### The idea behind that implementation
 
 * Controller holds data models and update view.
 * Model object can relate to another model objects by holding it in a collections or attributes.
