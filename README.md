@@ -13,8 +13,8 @@ Anyway it's here for archaeological purposes.
 * Models are singletons.
 * One model object may be used in a number of controllers.
 * If model is updated, the controller receives event and updates view accordingly.
-* The events are propagates through related models and through all related controllers.
-* Controllers may be selective at events they receive.
+* The events propagate through related models and through all related controllers.
+* Controllers may be selective for the events they receive.
 
 Notable code is in
 [relations.js](https://github.com/senotrusov/foam/blob/master/foam/foam_relations.js) and 
