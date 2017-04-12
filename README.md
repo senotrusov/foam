@@ -1,9 +1,8 @@
 # Implementation of Model-View-Controller in JavaScript, in browser
 
-I don't think it has any practical value these days, in the precence of many MVC JavaScript libraries,
-but that's my project from 2005 and the presence of it makes me an early adopter of some sort.
+This is my project from 2005. It was done way before the current widespread of MVC JavaScript libraries.
 
-Anyway it's here for archaeological purposes.
+These days there is no practical value in it, so it's here for archaeological purposes.
 
 ## The idea behind that implementation
 
@@ -17,10 +16,10 @@ Anyway it's here for archaeological purposes.
 * Controllers may be selective for the events they receive.
 
 Notable code is in
-[relations.js](https://github.com/senotrusov/foam/blob/master/foam/foam_relations.js) and
-[events.js](https://github.com/senotrusov/foam/blob/master/foam/foam_events.js).
+[relations.js](foam/foam_relations.js) and
+[events.js](foam/foam_events.js).
 
-[Other code](https://github.com/senotrusov/foam/tree/master/foam) is not quite interesting.
+[Other code](foam) is not that interesting.
 
 
 ## Copyright and License
